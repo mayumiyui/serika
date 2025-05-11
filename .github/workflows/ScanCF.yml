@@ -15,16 +15,16 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.GIT_TOKEN }}
-      - name: Use Bun
+      - name: Use Bun 🐰
         uses: oven-sh/setup-bun@v2
-      - name: Start Scan
+      - name: Start Scan ⭐️
         run: |
           bun install && bun run ./src/proxyip.ts
-      - name: Publish Result
+      - name: Publish Result 📥
         if: ${{ success() }}
         run: |
           git config --global user.name "Github Actions"
           git config --global user.email "actions@github.com"
           git add .
-          git commit -m "Update proxyip"
+          git commit -m "Update proxyip Yumi"
           git push origin main --force
