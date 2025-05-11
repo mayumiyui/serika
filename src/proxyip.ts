@@ -23,9 +23,9 @@ interface ProxyTestResult {
 
 let myGeoIpString: any = null;
 
-const KV_PAIR_PROXY_FILE = "Data/kvProxyList.json";
-const RAW_PROXY_LIST_FILE = "raw/rawProxyList.txt";// Data Mentah
-const PROXY_LIST_FILE = "Data/proxyList.txt";
+const KV_PAIR_PROXY_FILE = "Data/kvProxyList.json"; // Output Json
+const RAW_PROXY_LIST_FILE = "Raw/rawProxyList.txt";// Proxy Mentah
+const PROXY_LIST_FILE = "Data/proxyList.txt"; // Proxy Aktif
 const IP_RESOLVER_DOMAIN = "myapicheck.mayumiapi.workers.dev";
 const IP_RESOLVER_PATH = "/";
 const CONCURRENCY = 99;
